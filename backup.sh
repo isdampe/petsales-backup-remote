@@ -29,4 +29,5 @@ fi
 out=$domain-$(date +"%Y-%m-%d-%T").tar.gz
 scp $user@vps.$domain:/home/$user/backup/data/*-latest.tar.gz ~/Desktop/$domain-backups/$out
 ls -lth ~/Desktop/$domain-backups
-echo "Finished. Your backup files are located at ~/Desktop/$domain-backups"
+echo "Finished. If no files are listed above, backup did not succeed"
+echo "Your backup files are located at ~/Desktop/$domain-backups"
